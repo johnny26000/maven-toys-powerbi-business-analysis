@@ -27,7 +27,7 @@
 
 **Answer:** **Toys** lead in gross profit (**$1,079,527**), while **Electronics** have the highest gross margin (**44.57%**). The leading gross-profit category varies across store-location types: Toys lead in **Downtown** and **Residential** locations, whereas Electronics lead in **Commercial** and **Airport** locations.
 
-**Why it matters:** A category with the most profit dollars is not necessarily the one with the strongest margin. Comparing total location-type profits is also affected by how many stores are included in each location type.
+**Why it matters:** A category with the most profit is not necessarily the one with the strongest margin. Comparing total location-type profits is also affected by how many stores are included in each location type.
 
 ![Product profitability report](screenshots/01-profitability.png)
 
@@ -110,13 +110,6 @@ These expressions are documented from the project work; the `.pbix` remains the 
 - **Missing inventory rows are not automatically stockouts.** A store may simply not carry a particular product.
 - Monetary values shown on charts are rounded, so rounded components may not sum exactly to totals.
 
-## How to open and explore the project
-
-1. Download [Maven.pbix](Maven.pbix) and open it in **Power BI Desktop**.
-2. Navigate across four pages: *Product Profitability*, *Sales Trend & Seasonality*, *Inventory & Stockout*, and *Inventory Valuation*.
-3. Use the slicers to explore store locations, product categories and periods. Clear slicers for company-wide totals.
-4. If Power BI reports local source-path errors on refresh, use **Transform data → Data source settings** to point the queries to the downloaded Maven Analytics CSVs.
-5. If you do not have Power BI Desktop, review [Maven.pdf](Maven.pdf) or the page screenshots above. **GitHub itself does not run interactive `.pbix` reports.**
 
 ## Repository contents
 
@@ -135,4 +128,4 @@ maven-toys-powerbi-analysis/
     └── dax-measures.md
 ```
 
-**Credits:** Original sample dataset and prompt: Maven Analytics, *Mexico Toy Sales*. This is an independent educational portfolio analysis and not an official Maven Analytics report.
+**Credits:** Original sample dataset and prompt: [Maven Analytics, *Mexico Toy Sales*] (https://mavenanalytics.io/data-playground/mexico-toy-sales). This is an independent practice portfolio analysis and not an official Maven Analytics report.
