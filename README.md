@@ -59,7 +59,7 @@ For detailed evidence, limitations and business recommendations: **[Four questio
 
 ## Data, model and calculations
 
-The model uses a **sales fact table** and an **inventory snapshot fact table**, connected to **Products** and **Stores** dimension tables; the **Date** table supports sales time intelligence. The original dataset is available from Maven Analytics, while the cleaned data model and report are included in `Maven.pbix`.
+The model uses a **sales fact table** and an **inventory snapshot fact table**, connected to **Products** and **Stores** dimension tables; the **Date** table supports sales time intelligence. The original dataset is available from [Maven Analytics](https://mavenanalytics.io/data-playground/mexico-toy-sales), while the cleaned data model and report are included in `Maven.pbix`.
 
 Core calculations include:
 
@@ -92,7 +92,7 @@ SUMX(
 )
 ```
 
-These expressions are documented from the project work; the `.pbix` remains the authoritative source for the exact final measure definitions. More explanation: **[DAX measures and methods](docs/dax-measures.md)**.
+These expressions are documented from the project work; the `.pbix` remains the authoritative source for the exact final measure definitions.
 
 ## Recommendations to management
 
@@ -111,21 +111,8 @@ These expressions are documented from the project work; the `.pbix` remains the 
 - Monetary values shown on charts are rounded, so rounded components may not sum exactly to totals.
 
 
-## Repository contents
+## Credits
 
-```text
-maven-toys-powerbi-analysis/
-├── README.md
-├── Maven.pbix
-├── Maven.pdf
-├── screenshots/
-│   ├── 01-profitability.png
-│   ├── 02-sales-trends.png
-│   ├── 03-stockout-risk.png
-│   └── 04-inventory-valuation.png
-└── docs/
-    ├── business-questions.md
-    └── dax-measures.md
-```
+Original dataset and project questions: [Maven Analytics — Mexico Toy Sales](https://mavenanalytics.io/data-playground/mexico-toy-sales).
 
-**Credits:** Original sample dataset and prompt: [Maven Analytics, *Mexico Toy Sales*] (https://mavenanalytics.io/data-playground/mexico-toy-sales). This is an independent practice portfolio analysis and not an official Maven Analytics report.
+This is an independent portfolio project and is not an official Maven Analytics report.
